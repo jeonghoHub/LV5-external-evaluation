@@ -3,11 +3,16 @@
     pageEncoding="UTF-8" import="bean.*"%>
 <%
 	User user1 = new User("한국인", "1004", "2019-10-31");
-	String code = request.getParameter("code");
-	
+
 	Product product = new Product();
+
+
+	String code = request.getParameter("code");
+	//A100 == 삼성전자
+	
 	product.setCode(code);
 	product.find();
+	
 	System.out.println(product.getVendor());
 	System.out.println(product.getCode());
 	System.out.println(product.getDate());
@@ -31,7 +36,9 @@
 		제품코드
 	</td>
 	<td>
-		<p><%= product.getCode() %></p>
+		<p>
+		<%= product.getCode()%>
+		</p>
 	</td>
 </tr>
 <tr>

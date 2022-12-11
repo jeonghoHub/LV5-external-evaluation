@@ -1,9 +1,12 @@
-package bean;
+package bean; 
 import java.util.Date;
 
 public class User {
+	
 	private String name;
+	
 	private String password;
+	
 	private String date;
 	
 	
@@ -34,3 +37,4 @@ public class User {
 	}
 
 }
+

@@ -1,17 +1,16 @@
-package bean;
+package bean; 
 import java.util.Date;
 import java.util.HashMap;
 import java.util.Map;
 
 public class Product {
+	
 	private String code;
+	
 	private String vendor;
+	
 	private Date date;
 	
-	
-	public Product() {
-		super();
-	}
 	
 	public String getCode() {
 		return code;
@@ -40,13 +39,11 @@ public class Product {
 		
 		vendor = map.get(code);
 		
-		
 		if(vendor == null) {
 			vendor = "등록되지 않은 제품입니다.";
 		}
 		
 		date = new Date();
-		
 	}
 	
 }
